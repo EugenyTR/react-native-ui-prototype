@@ -104,8 +104,9 @@ const PlantDetail = ({navigation}) => {
                     top: 50,
                     left: SIZES.padding,
                     right: SIZES.padding,
+                    width: '90%'
                 }}>
-                <View style={{flexDirection: 'row'}}>
+                <View style={{flexDirection: 'row', width: '100%'}}>
                     <View style={{flex: 1}}>
                         <TouchableOpacity
                             style={{
@@ -149,11 +150,12 @@ const PlantDetail = ({navigation}) => {
                     </TouchableOpacity>
                 </View>
 
-                <View style={{flexDirection: 'row', marginTop: '10%'}}>
-                    <View style={{flex: 1}}>
+                <View style={{flexDirection: 'row', marginTop: '10%', width: '100%'}}>
+                    <View style={{width: '100%'}}>
                         <Text
-                            style={{color: COLORS.white, ...FONTS.largeTitle}}>
-                            Glory Mantas
+                            style={{color: COLORS.white, width: '100%', fontSize: 28, fontWeight: '700'}}>
+                            Растение
+                            «Суперрастение»
                         </Text>
                     </View>
                     <View style={{flex: 1}}></View>
@@ -191,27 +193,27 @@ const PlantDetail = ({navigation}) => {
                 }}>
                 <RequirementDetail
                     icon={icons.sun}
-                    label="Sunlight"
+                    label="Свет"
                     detail="15°C"
                 />
                 <RequirementDetail
                     icon={icons.drop}
-                    label="Water"
-                    detail="250 ML Daily"
+                    label="Вода"
+                    detail="250 мл в день"
                 />
                 <RequirementDetail
                     icon={icons.temperature}
-                    label="Room Temp"
+                    label="Комнатная температура"
                     detail="25°C"
                 />
                 <RequirementDetail
                     icon={icons.garden}
-                    label="Soil"
-                    detail="3 Kg"
+                    label="Почва"
+                    detail="3 кг"
                 />
                 <RequirementDetail
                     icon={icons.seed}
-                    label="Fertilizer"
+                    label="Удобрение"
                     detail="150 Mg"
                 />
             </View>
@@ -240,8 +242,8 @@ const PlantDetail = ({navigation}) => {
                     onPress={() => {
                         console.log('Take Action');
                     }}>
-                    <Text style={{color: COLORS.white, ...FONTS.h2}}>
-                        Take Action
+                    <Text style={{color: COLORS.white, ...FONTS.h5}}>
+                        Что надо сделать?
                     </Text>
 
                     <Image
@@ -264,8 +266,8 @@ const PlantDetail = ({navigation}) => {
                         paddingHorizontal: SIZES.padding,
                     }}>
                     <Text
-                        style={{flex: 1, color: COLORS.secondary, ...FONTS.h3}}>
-                        Almost 2 weeks of growing time
+                        style={{flex: 1, color: COLORS.secondary, ...FONTS.h5}}>
+                        Время выращивания - 2 недели
                     </Text>
                     <Image
                         source={icons.downArrow}
@@ -312,7 +314,7 @@ const PlantDetail = ({navigation}) => {
                         color: COLORS.secondary,
                         ...FONTS.h1,
                     }}>
-                    Requirements
+                    Требования
                 </Text>
 
                 {renderRequirementsBar()}

@@ -17,25 +17,25 @@ const Home = ({navigation}) => {
     const [newPlants, setNewPlants] = React.useState([
         {
             id: 0,
-            name: 'Plant 1',
+            name: 'Растение 1',
             img: images.plant1,
             favourite: false,
         },
         {
             id: 1,
-            name: 'Plant 2',
+            name: 'Растение 2',
             img: images.plant2,
             favourite: true,
         },
         {
             id: 2,
-            name: 'Plant 3',
+            name: 'Растение 3',
             img: images.plant3,
             favourite: false,
         },
         {
             id: 3,
-            name: 'Plant 4',
+            name: 'Растение 4',
             img: images.plant4,
             favourite: false,
         },
@@ -183,7 +183,7 @@ const Home = ({navigation}) => {
                             color: COLORS.secondary,
                             ...FONTS.body3,
                         }}>
-                        +{friendList.length - 3} More
+                        +{friendList.length - 3}
                     </Text>
                 </View>
             );
@@ -213,7 +213,7 @@ const Home = ({navigation}) => {
                                 justifyContent: 'space-between',
                             }}>
                             <Text style={{color: COLORS.white, ...FONTS.h2}}>
-                                New Plants
+                                Новые растения
                             </Text>
                             <TouchableOpacity
                                 onPress={() => {
@@ -267,7 +267,7 @@ const Home = ({navigation}) => {
                             }}>
                             <Text
                                 style={{color: COLORS.secondary, ...FONTS.h2}}>
-                                Today's Share
+                                Опубликованные сегодня
                             </Text>
 
                             <TouchableOpacity
@@ -279,7 +279,7 @@ const Home = ({navigation}) => {
                                         color: COLORS.secondary,
                                         ...FONTS.body3,
                                     }}>
-                                    See All
+                                    Все
                                 </Text>
                             </TouchableOpacity>
                         </View>
@@ -358,10 +358,10 @@ const Home = ({navigation}) => {
                             marginHorizontal: SIZES.padding,
                         }}>
                         <Text style={{color: COLORS.secondary, ...FONTS.h2}}>
-                            Added Friends
+                            Новые друзья
                         </Text>
                         <Text style={{color: COLORS.secondary, ...FONTS.body3}}>
-                            {friendList.length} total
+                            {friendList.length} всего
                         </Text>
                         <View style={{flexDirection: 'row', height: '60%'}}>
                             {/* Friends */}
@@ -387,7 +387,7 @@ const Home = ({navigation}) => {
                                         color: COLORS.secondary,
                                         ...FONTS.body3,
                                     }}>
-                                    Add New
+                                    Добавить
                                 </Text>
                                 <TouchableOpacity
                                     style={{
